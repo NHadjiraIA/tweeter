@@ -1,4 +1,25 @@
 # Tweeter Project
+##Screenshots
+
+
+![Screenshot of home page]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/home-page.png)
+
+![Screenshot of counter]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/counter.png)
+
+![Screenshot of error message component]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/error-message.png)
+
+![Screenshot of longer text in new tweet]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/longer-text.png)
+
+![Screenshot of new tweet component]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/new-tweet.png)
+
+[Screenshot of resizing the window]
+(https://github.com/NHadjiraIA/tweeter/blob/master/docs/resize-window.png)
+
 
 Tweeter is a simple, single-page Twitter clone.
 

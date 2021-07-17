@@ -1,0 +1,93 @@
+.new-tweet{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+}
+.new-tweet-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+label{   
+  justify-content:flex-start;
+  font-weight:bold;
+}
+textarea{  
+  background:white;
+  width: 100%;
+  font-weight:bold;
+  border: none;
+  resize: none;
+  border-bottom: 4px solid rgb(12, 12, 12);
+  outline: none;
+}
+button{
+  background-color: blue;
+  color: white;
+  font-family: 'Bungee', cursive;
+
+}
+output{
+   
+  font-family: 'Bungee', cursive;
+  justify-content:flex-end;
+}
+.new-tweet-footer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+tweets-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid;
+}
+.article-tweets{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  border: 1px solid black;
+  padding: 5px;
+}
+.article-tweets-header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.article-tweets-header .name{
+  display: flex;
+
+}
+.article-tweets-footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+.error-message{   
+  width: 100%; 
+  flex-shrink: 0; 
+  
+}
+.error-message > p{
+  border: 2px solid rgb(212, 26, 26);
+}
+.headerProfile{
+  margin-top: 20px;
+}
+
+.fa-flag:hover {
+
+color: brown;
+}
+.fa-expand:hover {
+
+  color: brown;
+  }
+.fa-heart:hover {
+
+ color: brown;
+} 

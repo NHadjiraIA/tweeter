@@ -6,24 +6,73 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-
+    <!--Add the external fonts to my HTML file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!--Add the Font Awesome library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class="titleTweeter">tweeter</span> 
+      <div class = "newTweet">
+         <span>Write a new tweet</span> 
+          <span style="color:seagreen">
+            <a class="btn-compose-tweet">
+              <i class="fa fa-angle-double-down"></i>
+            </a>
+          </span>
+        
+      </div>      
     </nav>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <div class="mainContainer">
+      <div class="mainContent">
+        <header class="profile">
+          <div class="headerProfile">
+              <img src="/images/profile-hex.png"> 
+          </div>
+          <br>
+          <div>
+              <h2>Hadjira</h2>
+          </div>
+         </header>
+      </div>
+        <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <div class="error-message" >             
+          </div>
+          <form class="new-tweet-form" action= "/tweets" method="POST">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>             
+            <div class="new-tweet-footer">
+              <button type="submit" class="new-tweet-form-button">Tweet</button>
+              <output id="tweet-text-counter" name="counter" class="counter" for="tweet-text">140</output>                
+            </div>
+          </form>
+        </section>
+        <section class="tweets-container">
+        </section>
+      </main>
+    </div>    
   </body>
 </html>

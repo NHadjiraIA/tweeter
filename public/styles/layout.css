@@ -13,13 +13,57 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
+  /* display: -webkit-flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; */
 }
+.mainContainer{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 100%; 
+  padding-top: 120px;
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+   
+}
+.container{
+  margin-top: 10px;
+  width: 90%;
+  align-self: center;
+}
+nav{
+    
+  background:blueviolet;
+}
+@media (min-width: 600px) {
+  .mainContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    
+    
+  }
+  nav{
+    
+    background: #374c91;
+  }
+  .profile{
+    margin-left: 20px;
+  }
+  .mainContent {
+   margin-top: 0px;
+   width: 60%;
+   
+
+  }
+  .container {
+  margin-top: 0px;
+  width: 80%;
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+}

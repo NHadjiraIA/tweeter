@@ -1,0 +1,61 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+  
+nav {
+   height: 120px;
+   color:#FFFFFF;   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   /*Create a CSS rule that causes the nav to be displayed in front of the header. ?? */
+   position:fixed;
+   width: 100%;
+   top:0px;
+
+
+}
+span {
+   font-family: 'Bungee', cursive;
+   
+   justify-content: space-between; 
+   
+
+}
+.titleTweeter {
+   margin-left:1.5em;
+}
+.newTweet {
+   display: flex;
+   margin-right:1.5em; 
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+ 
+.fa-angle-double-down {
+   display: flex;
+   align-items: center;   
+
+}
+.fa-angle-double-down{ 
+     animation: updown 2s ease infinite;
+    } 
+    @keyframes updown {  
+        0% {   
+             transform: translateY(-5%);  
+             } 
+        50% {  
+             transform: translateY(20%);  
+            }    
+        100% {    
+            transform: translateY(-5%); 
+            } 
+   }
+.btn-compose-tweet{
+   text-decoration: none;
+   color: red;
+}
